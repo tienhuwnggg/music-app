@@ -32,7 +32,7 @@ const player = document.getElementById("player");
 
 songList.onclick = function(e) {
     const musicSource = document.getElementById("source");
-    musicSource.src = "/songs/" + e.target.innerText; 
+    musicSource.src = "songs/" + e.target.innerText; 
     document.querySelector('#current-song').innerHTML = `Now Playing: ${e.target.innerText}`;
     player.load();
     player.play();
